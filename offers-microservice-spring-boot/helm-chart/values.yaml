@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: deekshithsn/offer
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 1001
+  name: offer
+  targetPort: 1001
+
+container:
+  name: offer-ui

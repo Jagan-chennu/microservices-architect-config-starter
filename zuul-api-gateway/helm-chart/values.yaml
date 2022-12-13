@@ -1,4 +1,3 @@
-
 replicaCount: 1
 
 image:
@@ -9,8 +8,8 @@ service:
   type: NodePort
   port: 9999
   name: zuul-api-gateway
-  targetport: 9999
-  nodeport: 32470
+  targetPort: 9999
+  nodePort: 32470
 
 container:
   name: zuul-api-gateway
